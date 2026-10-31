@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050b13">
+    <title>EKHA AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <div class="brand">
+            <div class="mini-core"></div>
+            <div>
+                <b>EKHA</b>
+                <small>PERSONAL AI SYSTEM</small>
+            </div>
+        </div>
+
+        <button id="clearBtn" class="ghost">
+            CLEAR
+        </button>
+    </header>
+
+    <section class="core-panel">
+
+        <div class="core" id="core">
+            <div class="core-ring ring1"></div>
+            <div class="core-ring ring2"></div>
+            <div class="core-center">E</div>
+        </div>
+
+        <div class="status" id="status">
+            SYSTEM ONLINE · LOCAL MODE
+        </div>
+
+        <div class="substatus">
+            Ready for your command
+        </div>
+
+    </section>
+
+    <main id="chat" class="chat">
+
+        <div class="message bot">
+            EKHA online. Main basic commands, calculations,
+            notes aur voice input handle kar sakta hoon.
+        </div>
+
+    </main>
+
+    <div class="quick">
+        <button data-cmd="What time is it?">TIME</button>
+        <button data-cmd="Open YouTube">YOUTUBE</button>
+        <button data-cmd="Open Google">GOOGLE</button>
+        <button data-cmd="Help">HELP</button>
+    </div>
+
+    <form id="composer">
+
+        <button type="button" id="micBtn" class="mic">
+            🎙
+        </button>
+
+        <input
+            id="userInput"
+            autocomplete="off"
+            placeholder="Ask EKHA something..."
+        >
+
+        <button type="submit" class="send">
+            SEND
+        </button>
+
+    </form>
+
+    <nav>
+        <button data-panel="notes">NOTES</button>
+        <button data-panel="reminders">REMINDERS</button>
+        <button data-panel="settings">SETTINGS</button>
+    </nav>
+
+</div>
+
+<div id="panel" class="panel hidden">
+
+    <div class="panel-head">
+        <b id="panelTitle">NOTES</b>
+        <button id="closePanel" class="ghost">
+            CLOSE
+        </button>
+    </div>
+
+    <div id="panelBody"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
